@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan Milojković</title>
+    <style>
+        /* Academic / Serif Typography Focus */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #111111;
+            font-family: Georgia, serif;
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            /*max-width: 650px;  Optimal reading line-length */
+            margin-left: 350px;
+            margin-right: 350px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #111111;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #555555;
+        }
+
+        /* Mobile-Optimized Tab Navigation */
+        .tabs-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 15px;
+            list-style: none;
+            margin-bottom: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .tabs-nav button {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+            color: #666666;
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .tabs-nav button:hover {
+            color: #000000;
+        }
+
+        .tabs-nav button.active {
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Content Sections */
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: #111111;
+        }
+
+        /* Mobile Tweaks */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                margin: 10px auto;
+            }
+            .tabs-nav {
+                gap: 10px 12px; /* Tighter spacing for smaller screens */
+            }
+            p {
+                text-align: left; /* Better readability on tiny screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Milan Milojković</h1>
+        <p class="subtitle">Musicologist, electronic music and art enthusiast, instrument builder, guitar player...</p>
+    </header>
+
+    <nav class="tabs-nav">
+        <button class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
+        <button class="tab-btn" onclick="openTab(event, 'about')">About</button>
+        <button class="tab-btn" onclick="openTab(event, 'writings')">Writings</button>
+        <button class="tab-btn" onclick="openTab(event, 'lectures')">Lectures</button>
+        <button class="tab-btn" onclick="openTab(event, 'books')">Books</button>
+        <button class="tab-btn" onclick="event, openTab(event, 'music')">Music</button>
+        <button class="tab-btn" onclick="openTab(event, 'videos')">Videos</button>
+        <button class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
+        <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
+    </nav>
+
+    <main>
+        <section id="home" class="tab-panel active">
+            <img src="title.jpg" alt="Milan Milojkovic">
+            <p>photo: D. Milenković</p>
+        </section>
+
+        <section id="about" class="tab-panel">
+            <h2>About</h2>
+            <p>Milan Milojković (Zaječar, 1986) completed his Bachelor’s, Master’s, and Doctoral studies in Musicology at the Faculty of Music in Belgrade. He defended his dissertation, which focused on digital technology in Serbian art music, under the mentorship of Dr. Vesna Mikić. Since 2009, he has been a regular contributor to the Third Program of Radio Belgrade. From 2012 to 2025, he served as a professor at the Academy of Arts in Novi Sad and as a guest lecturer at both the Faculty of Music in Belgrade and the Academy of Arts in Banja Luka.<br>
+
+He has published several books, including <i> Analysis of the Language of Writings on Music </i>(Academy of Arts, 2012) and <i>Digital Technology in Serbian Art Music</i> (Matica Srpska, 2020). He is the co-author of the publications <i>A Guide to Punk Culture in Novi Sad </i>(Academy of Arts, 2023), <i>Soundscapes of Novi Sad</i> (Academy of Arts, 2024), <i>Small Town Philharmonic</i> (Skver, 2025), among others.<br>
+
+He was a guest editor for an issue of the Sarajevo-based journal <i>Insam</i> (2019), and co-edited a conference proceedings volume dedicated to Ernő Király (2019) as well as a special issue of the journal <i>Slovenika </i>dedicated to Mihovil Logar (2022). He has published dozens of papers in domestic and international journals. He is actively involved in performing electroacoustic music and building electronic musical instruments, and is a co-founder and member of the <i> Laptop Ensemble Novi Sad</i>.</p>
+        </section>
+
+        <section id="writings" class="tab-panel">
+            <h2>Writings</h2>
+            <ul>
+            
+            	<li>Google scholar profile: </li><br>
+            	<li>ORCID profile: </li><br>
+            	
+                <li><strong></strong> </li>
+                <li><strong></strong> </li>
+            </ul>
+        </section>
+        
+        <section id="lectures" class="tab-panel">
+            <h2>Lectures</h2>
+            <ul>
+            	<p><b>Parallel Worlds – Yugoslav Computer Music at the time of country's dissolution</b></p><br>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/6kqetToPQ4E?si=d_flRMsoNWGVVTv1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	<p>The title of the lecture, borrowed from the eponymous installation by Gordana Novaković and Marjan Šijanec, is utilized to illustrate simultaneous, partially intertwined developments in the field of computer music creation and performance during the late 1980s in Yugoslavia. To illustrate the scope, activities, and achievements in this domain, the lecture will focus on the first Yugoslav computer music festival, *Mala lična muzika* (Little Personal Music), held in Belgrade in June 1987; the "case" of the exhibition by the "last Yugoslav association," the Association of Electronic Media Artists, in May 1991; and the state of the Yugoslav demoscene during this period. Using these examples, the lecture will demonstrate the methods of computer utilization in the music of that era, the state of digital technology at the time, and the relationships between creators, their immediate artistic environment, and the broader political situation both domestically and globally. Finally, it will address the significance of this musical genre for the subsequent development of electroacoustic creation in the post-Yugoslav states.</p>
+            	
+            	<p><b>"Budi čovek kao Đorđe"- veče posvećeno Đorđu Marjanoviću (with Igor Dević)</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/ax2ALUItq4I?si=5TzI56HIa98S0R3L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/IXHA4GQ-4rw?si=qcDdyeFkZkQTJksO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/rn9gD8k2bHs?si=XXaQaafn73MZGhh7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/L5TA6VvD-H0?si=baELzRdo2VpWigBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/6ac_Me-pNXI?si=WH01i7oCDa7PLaHa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p>Ove večeri su inicirane proučavanjem nasleđa našeg umetnika, pre svega tonskih zapisa sa njegovih koncerata u zemlji i inostranstvu, arhiva klubova Đokista (fanova Đorđa Marjanovića), kao i privatnih zvučnih i vizuelnih zapisa koje naši članovi nastoje da sagledaju u kontekstu u kojem su nastajali sa ciljem da se istakne značaj ovog umetnika za istoriju srpske kulture i njenog doprinosa globalnim muzičkim kretanjima. Naši članovi su uočili da je dosadašnja predstava o Đorđu Marjanoviću u domaćoj javnosti uglavnom zasnovana na diskografiji i pojedinim velikim mitovima iz istorije popularne muzike, te da ne reflektuje celokupnost njegovog nasleđa i ličnosti. Stoga nam je cilj da ovim projektom doprinesemo upotpunjenju načina na koje Đorđe Marjanović postoji u našem kolektivnom sećanju, ali i da profilišemo novi pogled na njegovu umetnost pokazujući šta "Čovek" znači za našu generaciju i današnje stanje u srpskoj muzičkoj kulturi.
+Događaj je započeo uvodnim predstavljanjem javno poznatih zapisa sa koncerata Đorđa Marjanovića, za kojim je bilo reči o našim aktivnostima na digitalizaciji i očuvanju zaostavštine ovog autora, naročito onog njenog dela koji do sada nije bio poznat javnosti. Publika je imala priliku da prvi put čuje do sada neobjavljene snimke sa brojnih koncerata iz SSSR-a, uz kuriozitete i demo snimke. Tokom večeri, predstavljene su i fotografije iz privatne arhive Đorđa Marjanovića, kao i deo bogate dokumentacije "Đokista".
+Drugi deo večeri je bio posvećen razgovoru sa učesnicima, o značaju Đorđa Marjanovića sa savremene stvaraoce kao i ljubitelje popularne muzike, o zaključcima i poukama koji se mogu izvesti iz bavljenja njegovom zaostavštinom.</p>
+            	
+            	
+            	<p><b>Thanx mr Rorschach - tačka preseka umetničkih stranputica</b></p><br>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/CzNbEwwHT6s?si=67OwvX2uxQ0PW9Cm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	<p>Lecture about Mitar Subotić Suba, "Rex Ilusivii", his compositions, poetics and artistic ideology.</p>
+            	
+            	<p><b>Not Just Blips and Blops – Music and Musicology in Home/Personal Computing Revolution  (1974–1988)</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/1NTqLMQo3Bk?si=p9BxfEMKHxgLru1n&amp;start=2726" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	<p>Throughout its early days in the 1960s, computer music was primarily connected with
+				academic institutions, since the hardware needed for composing and performing was not
+				available for home use. Overviews of the field’s past usually avoid addressing the
+				microcomputing revolution of the late 1970s and early 1980s, primarily due to the
+				amateur/hobbyist ‘nature’ of this field, and because home computers were not able to perform
+				complex processes developed on universities’ mainframes. Thanks to the growth of music-
+				related internet resources and contemporary data-handling skills, this ‘forgotten’ field of home
+				computing ‘re-appeared’, this time as a possible historical narrative about self-education and
+				discovering a new and existing digital world through ‘blips and blops’.
+				The main resources for this paper were programming manuals, magazines and similar
+				publications (periodic or not) from USA and Europe, that offered numerous examples of music
+				treatment in microcomputing. The research results prove that music was one of the most
+				popular applications for these early machines, and there are numerous examples of using
+				musical knowledge as a tool for achieving the most demanding computing tasks. The results
+				also make it obvious that programmers needed both practical and theoretical musical skills to
+				translate ideas into the program lines. Thus, the main goal of this paper is to make an effort
+				towards a construction of a historical narrative about the relationship between music and
+				personal computer development, that eventually made computers ‘devices for the masses’,
+				unavoidable in almost every field of contemporary musical practice.</p>
+            	
+            	<p><b>Musicology and Media - Medium of Musicology</b></p><br>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/ycXrPmELyzo?si=94kvMnv737ulXv9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	<p>Međunarodni interdisciplinarni simpozij FILOZOFIJA MEDIJA (2012.) Umjetnost i mediji</p> 
+            </ul>
+        </section>
+
+        <section id="books" class="tab-panel">
+            <h2>Books</h2>
+            <p></p>
+            <ul>
+                <li><em></em> </li>
+                <li><em></em> </li>
+            </ul>
+        </section>
+
+        <section id="music" class="tab-panel">
+            <h2>Music</h2>
+            <p>Compositions and performances:</p>
+            <ul>
+            
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=929600177/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://labudkup.bandcamp.com/album/suite-turbulences">Suite “Turbulences” by Milan Milojković</a></iframe>
+            <p>Milan Milojković - Suite “Turbulences”. Electroacoustic work, fixed media, 2026.<br>
+			&emsp; The suite “Turbulences” is a four-movement sonic autobiographical record created as a reaction to nightmares presumed to be triggered by major life changes. The fundamental sounds were created using hand-built analog synthesizers and subsequently processed; from there, micro and macro structures were realized using standard electronic music studio techniques. Recorded in Zaječar and Ljubljana from February to April 2026.</p>
+			
+			
+			
+			
+			<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=764828069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://labudkup.bandcamp.com/album/izme-u-okvira">Između okvira by Ivan Čkonjević i Milan Milojković</a></iframe>
+			<p>Recorded live in optic shop (where Ivan works), July 15, 2020.
+			Ivan Čkonjević - sound objects and electronics,
+			Milan Milojković - ZvuGen (DIY programmabile sound generator),
+			Igor Čubrilović - mastering.</p>
+			
+			<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2880956992/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://labudkup.bandcamp.com/album/raskomponovanje-auskomponierung">Raskomponovanje / Auskomponierung by Milan Milojković i Ivan Čkonjević</a></iframe>
+			<p>Recorded live in Novi Sad, 7.3.2019. on Improstor #107.
+			Ivan Čkonjević - sound objects and electronics,
+			Milan Milojković - ZvuGen (DIY programmabile sound generator),
+			Igor Čubrilović - mastering.</p>
+                
+                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3753615878/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://milanm.bandcamp.com/album/studies-for-small-sound-generators">Studies for small sound generators by Milan Milojković</a></iframe><br>
+                <p> Studies for small sound generators are results of the research conducted in the field of sound production devices from the past and their contemporary usage. I started the process in 2015, finding the first of the chips, YM2413 in a toy keyboard from (mid?) 80s. With chip extracted from original PCB and re-soldered onto a test board with Arduino, I followed the datasheet and wrote the code that will enable sending data to chip via serial (usb). In order to exploit all the features of the sound generator, I used RTC (real-time composition) library for PureData by Karlheinz Essl, made in Ircam during the 90s, for generating data structures for all available sound parameters of approximately equal complexity. Since this setup proved very versatile and applicable in numerous musical situations, I decided to continue the search for the chips in old computers, game consoles and other sound producing devices and use them in a similar manner. <br> &emsp; Due to technical limitations, some adaptations were needed from case to case. The exact same procedure like with YM2413, I exploited with YM2203 and Atari Pokey. Commodore SID chip turned out to be very prone to damage, and at the same time expensive and hard to find, so after two chips destroyed, I decided to modify my approach and use the chip in the original computer. It turned out it is possible to control SID in a similar manner over user port, so I opted for this approach for safety reasons. Similar procedure is used with Amiga Paula, but with the keyboard port hacked, since the software similar to the one I used for previous examples was already available. Korg Monotron seems like an “intruder” here, and it is, in terms of design and origin, but as it turned out, it is a very hackable little device that needed very few modifications in order to be used in aforementioned way.<br> &emsp; After all experiments and try-and-fail attempts, I ended up with what can be considered small sound generators benchmark that can demonstrate “true” hardware possibilities of the device under test, with somewhat acceptable aesthetic effect, in terms of music and/or sound art, although this was not the original intention. None of these devices were meant to be used like this. After all experiences, I decided to modify my approach a bit more, so this seemed like the right moment for publishing results achieved so far, because what is expected in the future will be considerably different and not suitable for same album. In a way, this can be considered as volume one.</p><br><br>
+                
+                
+                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3283980701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://milanm.bandcamp.com/album/quarantine-netpd-live-session">Quarantine netPd live session by Tamara Rajinac, Matija Anđelković, Atila Barna, Milan Milojković</a></iframe>
+                
+                <p>Session occurred as part of the course "Analog synthesis" at the Faculty of Music in Belgrade, realized online due to COVID-19 quarantine measures. Students: Tamara Rajinac, Matija Anđelković, Atila Barna.</p>
+                
+                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2457295927/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://emerge.bandcamp.com/album/zvuk-u-ograni-enom-prostoru-klang-in-begrenztem-raum">Zvuk u ograničenom prostoru / Klang in begrenztem Raum by Milan Milojković &amp; Ivan Čkonjević</a></iframe>
+                <p>Recorded in Novi Sad, 20.7.2017.
+				Ivan Čkonjević - sound objects and electronics,
+				Milan Milojković - ZvuGen (DIY programmabile sound generator).
+				
+				photography by Dan Penschuck (feindesign.de)
+				design by EMERGE</p>
+                
+            </ul>
+        </section>
+        
+        <section id="videos" class="tab-panel">
+            <h2>Videos</h2>
+            <ul>
+            	
+            	<p><b>Live at JazzClubMezzoforte</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/81cyvvZqtfo?si=geurV7e-Ygbsd9So" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Jure Boršič & Milan Milojković - Live at Taktišče no. 45</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/JIhC4LVQmWQ?si=y496PdVT9P6ysUiB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>The Mushroom Band - Ballads of a Cosmic Nomad (full album)</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/6Lcobc6nCjw?si=EokZJcli_VuBqo2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Kozarec in skodelica</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/1sh1bcXgdVc?si=hQebnJ98A7tKr6If" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Lenhart tapes - Dzamahirija (guitar Milan Milojković)</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/F55qoqB7_Wo?si=-Zf9QpfjZN5cNbpd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Lenhart tapes - Kurvin vodenjak (guitar Milan Milojković)</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/Jg8O3J7hzpg?si=CxH37AgX2s3bRYpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            	<p><b>Ulični emprompti</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/AIG_yb1mbWs?si=3SwRSbjdgcL3_ADU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Synthi 100 improvisation</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/FcoKm1h06MQ?si=sxPONft4_Pm0XhPe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Cvetovi, konj i cafe</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/F5gi1lR8vGo?si=ZJEF9uM4VCRufmmb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>U​ž​ivo u Temerinu, 25​.​9​.​2022, Lordan Skenderović,  Ivan Čkonjević i Milan Milojković</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/HZPrW6Xc0oE?si=bVhA_-_7W2PKDTvB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Alma​š​ka, XLVII, Festival "Osmatranja", crkva Sv. Mihaela Arkanđela, Kraljevo</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/rMiC3C3FfqQ?si=aazl8CInpJprOwtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Lordan Skenderović, Ivan Čkonjević i Milan Milojković - Memla u borovoj šumi</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/YsMiXWgL7ek?si=QWEk2NrqiCvUZ3iD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Gabi Fischer & Milan Milojković - Impro no. 3</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/IKGLzFrKZjE?si=qieTcSaFfz3bzInP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	
+            	<p><b>Gabi Fischer & Milan Milojković - Impro no. 2</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/42R4P_5pap0?si=c64TrsRJxtuIl-I1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Lordan Skenderović, Ivan Čkonjević i Milan Milojković - Heart of Noise</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/yXIfseRlx34?si=U-LCbAB2tHMRR3YT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Ivan Čkonjević & Milan Milojković - Izvan kontrolera</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/HO3ACTMyIu4?si=A-JQP6rK9hMyEBiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Ivan Čkonjević & Milan Milojković - Lalajlalalalalaj</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/N-_OucEEY1A?si=srQM1zkDseEF_3VV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Ivan Čkonjević & Milan Milojković - Najavljeno odsustvo</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/PhVq_8RhSag?si=XewAYNnJAnIoGaIr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Ivan Čkonjević & Milan Milojković - Rezon Alma</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/cK-N05LozhI?si=Usf79ba9WpWsWDzV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Zlatko Baracskai & Milan Milojković - Live at Academy of Arts, Novi Sad</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/c8qjvddHQhA?si=UQTGaAHP9CTVtwYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	<p><b>Press & Play show 010 - gosti Milan Milojković & Filip Đurović</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/OidSi4mSGuY?si=o1Jl0ZEXHQVnkOr3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            	
+            	<p><b>Нойзац - live at Grand cafe, Szeged, Hungary</b></p>
+            	<iframe width="560" height="315" src="https://www.youtube.com/embed/2yoVvlJ2ypI?si=u8bNP7swdiBiLujx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            	
+            </ul>
+        </section>
+
+        <section id="projects" class="tab-panel">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+            </ul>
+        </section>
+
+        <section id="contact" class="tab-panel">
+            <h2>Contact</h2>
+            <p>For inquiries, collaborations, or academic exchange, please use the channels below:</p>
+            <ul>
+                <li>Email: <a href="mailto:milanmuz@gmail.com">milanmuz@gmail.com</a></li>
+                
+                <li>GitHub: <a href="#">https://github.com/milanmuz/</a></li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+<script>
+    function openTab(event, tabId) {
+        const panels = document.querySelectorAll('.tab-panel');
+        panels.forEach(panel => panel.classList.remove('active'));
+
+        const buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        document.getElementById(tabId).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
