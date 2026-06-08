@@ -1,0 +1,5 @@
+User-agent:*
+Allow:/
+
+Sitemap:
+https://milanmuz.github.io/MilanMilojkovic/sitemap.xml
